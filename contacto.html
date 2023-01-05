@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Barberia Alura</title>
+    <link rel="stylesheet" href="style.css">
+   
+   
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <div class="logo"> <img src="imagenes/logo.png" alt="logo-barberia"><div>
+            <nav class="siderbar">
+                <ul>
+                    <li class="vinculo"><a href="index.html">
+                        <i class="icon-home"></i>
+                        Home
+                    </a></li>
+                    <li class="vinculo"><a href="productos.html">
+                        <i class="icon-products"></i>
+                        Productos</a></li>
+                    <li class="vinculo"><a href="contacto.html">
+                        <i class="icon-contact"></i>
+                        Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="" method="post" id="forma-contacto">
+          
+            
+            <fieldset class="datos-contacto">
+                <label for="tunombre">Nombre</label>
+                <input type="text" name="nombre" id="tunombre" placeholder="Ingrese su nombre" size="30" required>
+                
+                <label for="tuapellido">Apellido</label>
+                <input type="text" name="apellido" id="tuapellido" size="30" placeholder="ingrese su Apellido" required>
+                
+                <label for="tuemail">Correo electronico</label>
+                <input type="email" name="email" placeholder="ejemplo@dominio.com" id="tuemail" size="30" required>
+                <label for="tutelefono">Telefono</label>
+                <input type="tel" name="telefono" id="tutelefono" maxlength="10" placeholder="0123456789" required>
+                <label for="tumensaje">Mensaje</label>
+                <textarea name="mensaje" id="tumensaje" cols="30" rows="10"></textarea>
+            </fieldset>
+                            
+            <fieldset class="medio-contacto">
+                <legend>¿Como le gustaria que lo contactaramos?</legend>
+                
+                <label class="tipo-medio" for="poremail">
+                    <input type="radio" name="contacto" id="poremail"  value="email">email
+                </label>
+                
+                <label class="tipo-medio" for="portelefono">
+                    <input type="radio" name="contacto" id="portelefono"  value="telefono">Telefono
+                </label>
+                
+                <label class="tipo-medio" for="porwhatsapp">
+                    <input type="radio" name="contacto" id="porwhatsapp"  value="WhatsApp">WhatsApp
+                </label>
+            </fieldset>
+
+            <fieldset class="horario">
+                <legend> ¿En que horario prefiere ser atendido?</legend>
+                <select name="horario" id="tuhorario">
+                    <option value="mañana" label="Mañana"></option>
+                    <option value="tarde" label="Tarde"></option>
+                    <option value="noche" label="Noche"></option>
+                </select>
+            </fieldset>
+            <label for="novedades" class="novedades">
+                <input type="checkbox" name="novedades" id="novedades">
+                ¿Le gustaria recibir novedades de la barbaeria?
+            </label>
+            <input class="enviar" type="submit" value="enviar">
+        </form>
+
+        <table class="hora-atencion">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>lunes</td>
+                    <td>08h-20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h-20h</td>
+                </tr>
+                <tr>
+                    <td>viernes</td>
+                    <td>08h-20h</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+            <caption>Horario</caption>
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="imagenes/logo.png" alt="logo-barberia" id="logo" >
+        <p class="copyright"> &COPY; copyright 2022 </p>
+    
+    </footer>
+</body>
+</html>

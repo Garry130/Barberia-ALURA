@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'iconBarbershop';
+  src:
+    url('iconBarbershop.ttf?fsomlc') format('truetype'),
+    url('iconBarbershop.woff?fsomlc') format('woff'),
+    url('iconBarbershop.svg?fsomlc#iconBarbershop') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconBarbershop' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.icon-contact:before {
+  content: "\e944";
+}
+.icon-products:before {
+  content: "\ea5a";
+}
+.icon-home-vw:before {
+  content: "\ea7a";
+}
